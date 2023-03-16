@@ -1,8 +1,27 @@
-# Laptop price prediction
+<a name="readme-top"></a>
 
+<!-- SPRINT SHIELDS -->
+<a href="#overview">![Overview][overview-shield]</a>
+<a href="#init_exp">![Init_exp][init_exp-shield]</a>
+
+# Laptop price prediction
+##  Notebooks
+<a name="init_exp"></a>
+### initial_exploration notebook
+The initial_exploration notebook has been created and I have pulled in the laptop prices dataset using pandas library. I have explored the dataset by checking the first 5 rows, checking for missing and duplicate values, and dropping unnecessary columns. I have also identified the features that may be important in predicting laptop prices such as brand, processor, RAM, storage, screen size, graphics card, and operating system.
+
+After cleaning the dataset, I have created training and testing sets using the train_test_split function from sklearn library. The training set contains 80% of the data while the testing set contains the remaining 20%. 
+
+In summary, the initial exploration notebook has provided us with an overview of the laptop prices dataset, identified important features, cleaned the dataset, and split the data into training and testing sets for future modeling.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<a name="overview"></a>
+## Overview on the project
+### Objective:
 The objective of this machine learning project is to predict the price of a laptop based on its specifications and features such as CPU, RAM, screen size, storage, brand, etc.
 
 __Note:__ Switched to Laptop price prediction instead of project on Boston House Prices
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Features of importance:
 Features that might be important in predicting laptop prices include:
@@ -14,6 +33,7 @@ Features that might be important in predicting laptop prices include:
 * Screen Size: larger screens may command a higher price
 * Graphics Card: a dedicated graphics card may indicate a higher-end laptop and therefore a higher price
 * Operating System: certain operating systems, such as macOS, may command a higher price than others
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Potential useful feature combinations:
 Some combinations of features that may be useful in predicting laptop prices include:
@@ -21,15 +41,23 @@ Some combinations of features that may be useful in predicting laptop prices inc
 Processor and RAM: faster processors and more RAM may indicate a higher-end laptop and therefore a higher price
 Graphics Card and Processor: a dedicated graphics card and a faster processor may indicate a gaming laptop or high-performance laptop and therefore a higher price
 Storage and Brand: certain brands may command a higher price for larger storage capacities.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Expected Answer/Output:
 The goal is to create a model that can assist consumers in making informed decisions about purchasing laptops by providing them with an estimated price range based on the laptop's specifications.
 
 Design a predictive model that can accurately predict the price of a laptop based on its features and specifications.
 The model will take in the relevant laptop features, such as brand, processor, RAM, storage, screen size, graphics card, and operating system, and output a predicted price for the laptop.
 The model will be trained on the available laptop price dataset and evaluated for its accuracy in predicting prices for new laptops with similar features.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Data source:
 Here are few possible sources for my project:
 
 1. [Dataset](https://www.kaggle.com/datasets/mohidabdulrehman/laptop-price-dataset) by MOHID ABDUL REHMAN
 2. [Dataset](https://www.kaggle.com/datasets/kuchhbhi/latest-laptop-price-list?select=Cleaned_Laptop_data.csv) by SANTOSH KUMAR
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- MARKDOWN LINKS -->
+[overview-shield]: https://img.shields.io/badge/Overview-brightgreen
+[init_exp-shield]: https://img.shields.io/badge/notebook-initial__exploration-yellowgreen
