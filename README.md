@@ -3,6 +3,7 @@
 <!-- SPRINT SHIELDS -->
 <a href="#overview">![Overview][overview-shield]</a>
 <a href="#init_exp">![Init_exp][init_exp-shield]</a>
+<a href="#lin_reg">![Lin_reg][lin_reg-shield]</a>
 
 # Laptop price prediction
 ##  Notebooks
@@ -13,6 +14,14 @@ The initial_exploration notebook has been created and I have pulled in the lapto
 After cleaning the dataset, I have created training and testing sets using the train_test_split function from sklearn library. The training set contains 80% of the data while the testing set contains the remaining 20%. 
 
 In summary, the initial exploration notebook has provided us with an overview of the laptop prices dataset, identified important features, cleaned the dataset, and split the data into training and testing sets for future modeling.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<a name="lin_reg"></a>
+### linear_regression notebook
+In this notebook, I learned how to perform linear regression on a dataset to predict the prices of laptops. I started by reading the dataset, cleaning it, and selecting features for the independent variables X and the target variable Y. I then used one-hot encoding to convert categorical features to numerical ones and split the dataset into training and testing sets. However, the initial linear regression model did not perform well, with a negative R-squared score and a high mean absolute error, indicating that it was not good enought at predicting laptop prices.
+
+The updated R-squared score of 0.729 and mean absolute error of ₹ 14812.68 indicate that the linear regression model with the selected features and the rounded-off weight feature is able to explain around 73% of the variance in the target variable (price) and the predicted prices are on average ₹ 14812.68 away from the true prices.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a name="overview"></a>
@@ -61,3 +70,4 @@ Here are few possible sources for my project:
 <!-- MARKDOWN LINKS -->
 [overview-shield]: https://img.shields.io/badge/Overview-brightgreen
 [init_exp-shield]: https://img.shields.io/badge/notebook-initial__exploration-yellowgreen
+[lin_reg-shield]: https://img.shields.io/badge/notebook-linear__regression-yellowgreen
