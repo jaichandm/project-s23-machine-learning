@@ -30,6 +30,8 @@ The updated R-squared score of 0.729 and mean absolute error of ₹ 14812.68 ind
 
 The notebook uses pandas, sklearn.model_selection, and sklearn.preprocessing to train two different models on a laptop dataset, with mean squared error and R-squared metrics used to evaluate the decision tree regressor and accuracy, precision, and F1-score for the SVM model.
 
+Updated with refined analysis of the models using random forest regressor and MLP regressor
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a name="overview"></a>
