@@ -11,7 +11,10 @@
 <a name="overview"></a>
 ## Overview on the project
 ### Objective:
-The objective of this machine learning project is to predict the price of a laptop based on its specifications and features such as CPU, RAM, screen size, storage, brand, etc.
+The objective of this machine learning project is to predict the price of a laptop based on its specifications and features such as CPU, RAM, screen size, Resolution, storage, brand, etc.
+
+### Introduction:
+This project aims to build a machine learning model to predict the price of a laptop based on its specifications and features. Features that might be important in predicting laptop prices include brand, processor, RAM, storage, screen size, graphics card, and operating system. Some combinations of features that may be useful in predicting laptop prices include Processor and RAM, Graphics Card and Processor, and Storage and Brand. The goal is to create a model that can assist consumers in making informed decisions about purchasing laptops by providing them with an estimated price range based on the laptop's specifications.
 
 __Note:__ Switched to Laptop price prediction instead of project on Boston House Prices
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -36,19 +39,30 @@ Graphics Card and Processor: a dedicated graphics card and a faster processor ma
 Storage and Brand: certain brands may command a higher price for larger storage capacities.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Expected Answer/Output:
+### Expected Goals:
 The goal is to create a model that can assist consumers in making informed decisions about purchasing laptops by providing them with an estimated price range based on the laptop's specifications.
 
 Design a predictive model that can accurately predict the price of a laptop based on its features and specifications.
 The model will take in the relevant laptop features, such as brand, processor, RAM, storage, screen size, graphics card, and operating system, and output a predicted price for the laptop.
 The model will be trained on the available laptop price dataset and evaluated for its accuracy in predicting prices for new laptops with similar features.
+
+### Conclusion:
+In this project, we explored several datasets and used data cleaning and feature engineering techniques to prepare the data for modeling. I then applied various regression and classification algorithms, such as linear regression, decision trees, SVC, random forests, and neural networks, to train our predictive model. We evaluated the accuracy of our model using metrics such as mean squared error, R-squared score, and precision, and compared the results to baseline models and other models to assess their performance.
+
+Overall, I can be concluded that the random forest regression model is a more accurate predictor of the overall cost of a laptop than the linear regression model. The random forest model outperformed the linear regression model in terms of R2 score and MSE, indicating a stronger capacity for prediction. 
+
+I also found below features having strong correlation with price of the laptop(list in decreasing order):
+Ram, SSD, ppi(pixel count), CPU brand
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Data source:
-Here are few possible sources for my project:
+## Links
 
-1. [Dataset](https://www.kaggle.com/datasets/mohidabdulrehman/laptop-price-dataset) by MOHID ABDUL REHMAN
-2. [Dataset](https://www.kaggle.com/datasets/kuchhbhi/latest-laptop-price-list?select=Cleaned_Laptop_data.csv) by SANTOSH KUMAR
+- [RAW DATA](RAW_DATA.md)
+- [DATA](DATA.md)
+- [ANALYSIS](ANALYSIS.md)
+- [CONCLUSION](CONCLUSION.md)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ##  Notebooks
