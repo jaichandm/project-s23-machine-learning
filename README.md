@@ -7,35 +7,6 @@
 <a href="#classification">![classification][classification-shield]</a>
 
 # Laptop price prediction
-<<<<<<< HEAD
-=======
-##  Notebooks
-<a name="init_exp"></a>
-### initial_exploration notebook
-The initial_exploration notebook has been created and I have pulled in the laptop prices dataset using pandas library. I have explored the dataset by checking the first 5 rows, checking for missing and duplicate values, and dropping unnecessary columns. I have also identified the features that may be important in predicting laptop prices such as brand, processor, RAM, storage, screen size, graphics card, and operating system.
-
-After cleaning the dataset, I have created training and testing sets using the train_test_split function from sklearn library. The training set contains 80% of the data while the testing set contains the remaining 20%. 
-
-In summary, the initial exploration notebook has provided us with an overview of the laptop prices dataset, identified important features, cleaned the dataset, and split the data into training and testing sets for future modeling.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<a name="lin_reg"></a>
-### linear_regression notebook
-In this notebook, I learned how to perform linear regression on a dataset to predict the prices of laptops. I started by reading the dataset, cleaning it, and selecting features for the independent variables X and the target variable Y. I then used one-hot encoding to convert categorical features to numerical ones and split the dataset into training and testing sets. However, the initial linear regression model did not perform well, with a negative R-squared score and a high mean absolute error, indicating that it was not good enought at predicting laptop prices.
-
-The updated R-squared score of 0.729 and mean absolute error of ₹ 14812.68 indicate that the linear regression model with the selected features and the rounded-off weight feature is able to explain around 73% of the variance in the target variable (price) and the predicted prices are on average ₹ 14812.68 away from the true prices.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<a name="classification"></a>
-### classification notebook
-
-The notebook uses pandas, sklearn.model_selection, and sklearn.preprocessing to train two different models on a laptop dataset, with mean squared error and R-squared metrics used to evaluate the decision tree regressor and accuracy, precision, and F1-score for the SVM model.
-
-Updated with refined analysis of the models using random forest regressor and MLP regressor
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
->>>>>>> 7620d4fa201a2634eac60469a366004a3c170281
 
 <a name="overview"></a>
 ## Overview on the project
