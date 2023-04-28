@@ -7,30 +7,6 @@
 <a href="#classification">![classification][classification-shield]</a>
 
 # Laptop price prediction
-##  Notebooks
-<a name="init_exp"></a>
-### initial_exploration notebook
-The initial_exploration notebook has been created and I have pulled in the laptop prices dataset using pandas library. I have explored the dataset by checking the first 5 rows, checking for missing and duplicate values, and dropping unnecessary columns. I have also identified the features that may be important in predicting laptop prices such as brand, processor, RAM, storage, screen size, graphics card, and operating system.
-
-After cleaning the dataset, I have created training and testing sets using the train_test_split function from sklearn library. The training set contains 80% of the data while the testing set contains the remaining 20%. 
-
-In summary, the initial exploration notebook has provided us with an overview of the laptop prices dataset, identified important features, cleaned the dataset, and split the data into training and testing sets for future modeling.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<a name="lin_reg"></a>
-### linear_regression notebook
-In this notebook, I learned how to perform linear regression on a dataset to predict the prices of laptops. I started by reading the dataset, cleaning it, and selecting features for the independent variables X and the target variable Y. I then used one-hot encoding to convert categorical features to numerical ones and split the dataset into training and testing sets. However, the initial linear regression model did not perform well, with a negative R-squared score and a high mean absolute error, indicating that it was not good enought at predicting laptop prices.
-
-The updated R-squared score of 0.729 and mean absolute error of ₹ 14812.68 indicate that the linear regression model with the selected features and the rounded-off weight feature is able to explain around 73% of the variance in the target variable (price) and the predicted prices are on average ₹ 14812.68 away from the true prices.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<a name="classification"></a>
-### classification notebook
-
-The notebook uses pandas, sklearn.model_selection, and sklearn.preprocessing to train two different models on a laptop dataset, with mean squared error and R-squared metrics used to evaluate the decision tree regressor and accuracy, precision, and F1-score for the SVM model.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <a name="overview"></a>
 ## Overview on the project
@@ -73,6 +49,47 @@ Here are few possible sources for my project:
 
 1. [Dataset](https://www.kaggle.com/datasets/mohidabdulrehman/laptop-price-dataset) by MOHID ABDUL REHMAN
 2. [Dataset](https://www.kaggle.com/datasets/kuchhbhi/latest-laptop-price-list?select=Cleaned_Laptop_data.csv) by SANTOSH KUMAR
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+##  Notebooks
+<a name="init_exp"></a>
+### initial_exploration notebook
+The code is performing data cleaning and feature engineering on the "Laptop Prices" dataset. Here is a summary of what the code is doing:
+
+* The "Ram" and "Weight" columns are cleaned by removing the units and converting them to numeric types.
+* The "Touchscreen" and "Ips" columns are created based on the presence of certain keywords in the "ScreenResolution" column.
+* The "X_res" and "Y_res" columns are extracted from the "ScreenResolution" column and cleaned by removing commas and converting them to numeric types.
+* The "ppi" column is created by calculating the pixel density of the screen based on the "X_res", "Y_res", and "Inches" columns.
+* The "Cpu brand" column is created based on the processor brand in the "Cpu" column.
+* The "Memory" column is cleaned by removing the units and converting them to numeric types.
+* The "Layer1HDD", "Layer1SSD", "Layer1Hybrid", and "Layer1Flash_Storage" columns are created based on the presence of certain keywords in the "Memory" column.
+* The "Layer2HDD", "Layer2SSD", and "Layer2Hybrid" columns are created based on the presence of certain keywords in the second layer of the "Memory" column.
+
+Overall, the code is preparing the dataset for further analysis and modeling by cleaning and transforming the data into a more useful format.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<a name="lin_reg"></a>
+### linear_regression notebook
+The linear notebook is performing linear regression on a laptop price dataset using scikit-learn. The dataset is split into training and testing sets using the train_test_split function. The ColumnTransformer class is used to transform the categorical variables using one-hot encoding. The transformed data is then fed into a linear regression model using the LinearRegression class.
+
+The Pipeline class is used to chain the data transformation and the regression model together. The model is trained on the training set using the fit method and then used to make predictions on the test set using the predict method. The notebook then calculates the R2 score and mean squared error (MSE) using the r2_score and mean_squared_error functions, respectively.
+
+Finally, the notebook generates a scatter plot of the predicted versus actual values using matplotlib. The plot includes a line of best fit to visually compare the predicted and actual values. The R2 score of 0.807 indicates a relatively good fit of the linear regression model to the data, while the MSE of 0.0737 shows the average squared difference between the predicted and actual values.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<a name="classification"></a>
+### classification notebook
+
+The notebook uses pandas, sklearn.model_selection, and sklearn.preprocessing to train two different models on a laptop dataset, with mean squared error and R-squared metrics used to evaluate the decision tree regressor and accuracy, precision, and F1-score for the SVM model.
+
+Updated with refined analysis of the models using random forest regressor and MLP regressor
+
+The Decision Tree and Linear SVC models have an R2 score of 1.0 and an MSE of 0.0, which suggests that they have a perfect fit to the data. This might indicate that the models are overfitting the data.
+
+The MLP Regressor model has an R2 score of -2.199 and an MSE of 1.171, which indicates that the model performs poorly on the dataset. A negative R2 score means that the model is worse than the baseline model that always predicts the mean of the target variable. The high MSE also suggests that the model is making large errors in its predictions.
+
+The Random Forest model has an R2 score of 0.887 and an MSE of 0.043, which suggests that the model performs well on the dataset.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS -->
